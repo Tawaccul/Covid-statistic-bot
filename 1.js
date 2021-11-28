@@ -1,5 +1,9 @@
 require('dotenv').config();
 
+require('https').createServer().listen(process.env.PORT || 5000).on('request', function(req, res){
+  res.end('')
+});
+
 const { Telegraf } = require('telegraf');
 
 const api = require('covid19-api');

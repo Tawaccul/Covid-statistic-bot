@@ -13,7 +13,7 @@ const COUNTRIES_HELP = require('./const');
 const {Markup}  = require('telegraf');
 
 const bot = new Telegraf(process.env.Bot_token);
-ф
+
 bot.start((ctx) => ctx.reply(`Привет, ${ctx.message.from.first_name}!
 Узнай статистику по Коронавирусу. 
 Для этого напиши на английском название любой страны. 

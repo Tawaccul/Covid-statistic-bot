@@ -17,12 +17,14 @@ const bot = new Telegraf(process.env.Bot_token);
 bot.start((ctx) => ctx.reply(`Привет, ${ctx.message.from.first_name}!
 Узнай статистику по Коронавирусу. 
 Для этого напиши на английском название любой страны. 
-`,
+`, 
 
 Markup.keyboard([
 ['US', 'Russia', 'Qatar', 'Kazakhstan'],
 ['Ukraine', 'Japan', 'Poland', 'Belarus'],
-	]).resize() 
+	]).resize() ,
+
+	console.log("круто") 
   )
 );
 bot.help((ctx) => ctx.reply(COUNTRIES_HELP));
